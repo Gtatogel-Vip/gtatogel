@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gtatogelvip.github.io/gtatogel/sitemap.xml
