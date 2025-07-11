@@ -48,6 +48,7 @@
       z-index: -1;
       opacity: 0.05;
     }
+
     @keyframes bgmove {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
@@ -63,21 +64,23 @@
       z-index: 1;
     }
 
-    .marquee {
+    .marquee, .seo-marquee {
       width: 100%;
       overflow: hidden;
       white-space: nowrap;
       box-sizing: border-box;
-      margin: 10px 0 30px;
       z-index: 1;
+      margin: 10px 0;
     }
-    .marquee span {
+
+    .marquee span, .seo-marquee span {
       display: inline-block;
       padding-left: 100%;
-      animation: scroll-left 15s linear infinite;
+      animation: scroll-left 20s linear infinite;
       color: #ffe066;
       font-size: 14px;
     }
+
     @keyframes scroll-left {
       0% { transform: translateX(0); }
       100% { transform: translateX(-100%); }
@@ -91,6 +94,7 @@
       box-shadow: 0 0 30px rgba(0, 229, 211, 0.3);
       z-index: 1;
     }
+
     .btn {
       display: block;
       width: 100%;
@@ -105,22 +109,25 @@
       cursor: pointer;
       text-decoration: none;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      position: relative;
       animation: pulse 2s infinite;
       z-index: 1;
     }
+
     .btn:hover {
       transform: scale(1.05);
       box-shadow: 0 0 15px rgba(255,255,255,0.2);
     }
+
     .btn-daftar {
       background: linear-gradient(to right, #00e5d3, #e0e0e0);
       color: #000;
     }
+
     .btn-login {
       background: linear-gradient(to right, #ffe066, #00e5d3);
       color: #000;
     }
+
     @keyframes pulse {
       0% { transform: scale(1); }
       50% { transform: scale(1.05); }
@@ -137,21 +144,6 @@
       z-index: 1;
     }
 
-    .seo-marquee {
-      margin-top: 20px;
-      width: 100%;
-      overflow: hidden;
-      white-space: nowrap;
-      z-index: 1;
-    }
-    .seo-marquee span {
-      display: inline-block;
-      padding-left: 100%;
-      animation: scroll-left 25s linear infinite;
-      color: #ccc;
-      font-size: 13px;
-    }
-
     footer {
       margin-top: auto;
       text-align: center;
@@ -166,7 +158,10 @@
   <div class="animated-bg"></div>
 
   <img src="Logo.webp" alt="Logo GTA Togel" class="logo">
-  <div class="marquee"><span>Selamat datang di GTATOGEL - Situs Togel Resmi & Terpercaya! Daftar Sekarang dan Raih Jackpot Setiap Hari!</span></div>
+
+  <div class="marquee">
+    <span>Selamat datang di GTATOGEL - Situs Togel Resmi & Terpercaya! Daftar Sekarang dan Raih Jackpot Setiap Hari!</span>
+  </div>
 
   <img src="Foto.jpeg" alt="Foto Promo" class="banner">
 
